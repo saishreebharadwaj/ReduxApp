@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>House App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <a href="http://www.ewacieslikiewicz.com/" class="eram-logo" rel="home"
+    itemprop="url"><img src="http://www.ewacieslikiewicz.com/wp-
+    content/uploads/2017/08/cropped-Zrzut-ekranu-2017-07-11-o-13.13.20.png"
+    alt="EWA CIEŚLIKIEWICZ" class="ol-retina"></a>
+	<script>
+
+        function resize() {
+  if ($(window).width() < 768) {
+    $(".eram-logo img").attr(
+      "src",
+      "http://www.ewacieslikiewicz.com/wp-content/uploads/2017/08/cropped-Zrzut-ekranu-2017-07-11-o-13.13.20.png"
+    );
+  } else {
+    $(".eram-logo img").attr(
+      "src",
+      "http://emonitoring.poczta-polska.pl/hermes/themes/poczta-polska/skin/logo.png"
+    );
+  }
+}
+
+//the function call when window resized
+$(window).on("resize", resize);
+
+    </script>
+</body>
